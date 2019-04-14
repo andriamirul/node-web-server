@@ -8,16 +8,14 @@ var app = express();
 app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/sisfo'));
 
-app.get('/', (req, res) => {
-  //res.send('Hello Express!');
-  res.send({
-    name: 'Andri',
-    Likes:[
-      'kamu',
-      'dia'
-    ]
-  });
-});
+//  //res.send('Hello Express!');
+//  res.send({
+//    name: 'Andri',
+  //  Likes:[
+    //  'kamu',
+    //  'dia'
+  //  ]
+//  });
 
 app.get('/about',(req, res)=>{
   res.render('about.hbs',{
